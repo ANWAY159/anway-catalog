@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Anway 产品选型 · Product Finder</title>
+<meta name="description" content="安规电子 LED 驱动电源产品目录：按系列、功率、调光方式查询 62 个型号的规格与认证。">
+<meta name="theme-color" content="#0e2a47">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="Anway">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="192x192" href="icons/icon-192.png">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div id="modeBanner" class="mode-banner" hidden></div>
+
+<header class="topbar">
+  <a class="brand" href="#/" aria-label="Anway 产品选型首页">
+    <img class="brand-mark" src="icons/icon-192.png" alt="" width="34" height="34">
+    <span class="brand-text">
+      <strong id="brandName">Anway</strong>
+      <small id="brandSub">产品选型</small>
+    </span>
+  </a>
+  <div class="top-actions">
+    <button id="langBtn" class="ghost-btn" type="button" aria-label="切换语言 / Switch language">EN</button>
+  </div>
+</header>
+
+<main id="view" class="view" tabindex="-1">
+  <div class="loading">
+    <div class="spinner" aria-hidden="true"></div>
+    <p>加载中… / Loading…</p>
+  </div>
+</main>
+
+<footer class="site-foot">
+  <p id="footCompany">惠州市安规电子有限公司 · HuiZhou Anway Electrical Co., Ltd.</p>
+  <p id="footNote">认证信息为平台级口径，逐型号以证书与规格书为准。</p>
+  <p id="footMeta"></p>
+</footer>
+
+<noscript><p class="noscript">此页面需要启用 JavaScript。</p></noscript>
+
+<script src="data.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
