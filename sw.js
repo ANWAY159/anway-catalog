@@ -1,5 +1,5 @@
 /* Anway Product Finder — 离线缓存 */
-var CACHE = "anway-catalog-v2";
+var CACHE = "anway-catalog-v4";
 var SHELL = [
   "./",
   "index.html",
@@ -33,16 +33,17 @@ self.addEventListener("fetch", function (e) {
   var req = e.request;
   if (req.method !== "GET" || new URL(req.url).origin !== self.location.origin) return;
 
-  // 数据：先给缓存，同时后台更新
+  // 数据：联网时永远取最新，断网回退缓存（改了 xlsx 不用等缓存过期）
   if (/data\.(js|json)$/.test(new URL(req.url).pathname)) {
     e.respondWith(
-      caches.match(req).then(function (hit) {
-        var net = fetch(req).then(function (res) {
+      fetch(req).then(function (res) {
+        if (res.ok) {
           var copy = res.clone();
           caches.open(CACHE).then(function (c) { c.put(req, copy); });
-          return res;
-        }).catch(function () { return hit; });
-        return hit || net;
+        }
+        return res;
+      }).catch(function () {
+        return caches.match(req);
       })
     );
     return;

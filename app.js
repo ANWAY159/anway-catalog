@@ -25,6 +25,49 @@
       series: "系列",
       viewAll: "查看全部",
       bySeries: "按系列",
+      browseAll: "查看全部 {n} 个型号",
+      quickPick: "快速选型",
+      pickHint: "按条件逐层缩小，结果即时显示",
+      picked: "已选",
+      pickClear: "清除",
+      pickCount: "{n} 个型号符合",
+      pickEmpty: "没有完全符合的型号",
+      pickEmptyHint: "去掉一个条件再试",
+      cart: "样品清单",
+      addSample: "加入样品清单",
+      added: "已加入",
+      viewList: "查看清单",
+      addedToast: "已加入样品清单",
+      sampleTitle: "样品需求清单",
+      sampleCount: "{n} 个型号",
+      sampleEmpty: "样品清单还是空的",
+      sampleEmptyHint: "先去挑几个型号，再回来提交样品需求",
+      goPick: "去选型",
+      clearList: "清空",
+      clearConfirm: "确定清空整个样品清单吗？",
+      qty: "数量",
+      remove: "移除",
+      customerTitle: "客户信息",
+      optional: "选填",
+      customerHint: "填了回复更快；不填也能发送，我们会通过邮件联系您。",
+      fCompany: "公司",
+      fContact: "联系人",
+      fEmail: "邮箱",
+      fCountry: "国家/地区",
+      fPhone: "电话 / 微信",
+      fNeedBy: "期望交期",
+      fNote: "备注",
+      fNotePlaceholder: "应用场景、认证要求、其他说明…",
+      send: "提交样品需求",
+      sendTitle: "选择发送方式",
+      byEmail: "用邮件发送",
+      byEmailHint: "打开您的邮箱，需求单已填好",
+      byWecom: "加企微发需求",
+      byWecomHint: "扫码添加，把需求单发给我们",
+      byCopy: "复制需求单",
+      byCopyHint: "粘贴到微信、WhatsApp 或任何渠道",
+      copiedReq: "需求单已复制",
+      wecomScan: "用企业微信扫码添加我们",
       byDimming: "按调光方式",
       all: "全部",
       allSeries: "全部系列",
@@ -87,6 +130,49 @@
       series: "Series",
       viewAll: "View all",
       bySeries: "By series",
+      browseAll: "Browse all {n} models",
+      quickPick: "Quick pick",
+      pickHint: "Narrow down step by step — results update instantly",
+      picked: "Selected",
+      pickClear: "Clear",
+      pickCount: "{n} matching models",
+      pickEmpty: "No model matches all filters",
+      pickEmptyHint: "Remove one condition and try again",
+      cart: "Sample list",
+      addSample: "Add to sample list",
+      added: "Added",
+      viewList: "View list",
+      addedToast: "Added to sample list",
+      sampleTitle: "Sample request",
+      sampleCount: "{n} models",
+      sampleEmpty: "Your sample list is empty",
+      sampleEmptyHint: "Pick a few models first, then come back to submit",
+      goPick: "Browse models",
+      clearList: "Clear",
+      clearConfirm: "Clear the whole sample list?",
+      qty: "Qty",
+      remove: "Remove",
+      customerTitle: "Your details",
+      optional: "optional",
+      customerHint: "Faster reply with these. You can also send without them and we will contact you by email.",
+      fCompany: "Company",
+      fContact: "Contact",
+      fEmail: "Email",
+      fCountry: "Country",
+      fPhone: "Phone / WeChat",
+      fNeedBy: "Required by",
+      fNote: "Notes",
+      fNotePlaceholder: "Application, certification requirements, …",
+      send: "Submit sample request",
+      sendTitle: "How to send",
+      byEmail: "Send by email",
+      byEmailHint: "Opens your mail app with the request filled in",
+      byWecom: "Send via WeCom",
+      byWecomHint: "Scan to add us, then paste the request",
+      byCopy: "Copy request",
+      byCopyHint: "Paste into WeChat, WhatsApp or anywhere",
+      copiedReq: "Request copied",
+      wecomScan: "Scan with WeCom to add us",
       byDimming: "By dimming",
       all: "All",
       allSeries: "All series",
@@ -198,21 +284,85 @@
     back: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 18l-6-6 6-6"/></svg>',
     filter: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 7h16M7 12h10M10 17h4"/></svg>',
     copy: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"><rect x="9" y="9" width="11" height="11" rx="2"/><path d="M5 15V5a2 2 0 0 1 2-2h8"/></svg>',
+    plus: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg>',
+    check: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="m4 12.5 5 5L20 6.5"/></svg>',
     share: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 16V3m0 0 4 4m-4-4L8 7"/><path d="M5 14v5a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-5"/></svg>',
-    mail: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg>'
+    mail: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg>',
+    chat: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"><path d="M21 11.5a8 8 0 0 1-8 8H8l-4 3v-4.6A8 8 0 0 1 13 3.5a8 8 0 0 1 8 8Z"/><path d="M9 11h6"/></svg>'
   };
+
+  /* ---------------- 样品清单状态 ---------------- */
+
+  var SAMPLE_KEY = "anway-sample-v1";
+
+  function loadSample() {
+    try {
+      var s = JSON.parse(localStorage.getItem(SAMPLE_KEY) || "null");
+      if (s && Array.isArray(s.items)) {
+        s.customer = s.customer || {};
+        return s;
+      }
+    } catch (e) {}
+    return { items: [], customer: {} };
+  }
+
+  var sample = loadSample();
+
+  function saveSample() {
+    try { localStorage.setItem(SAMPLE_KEY, JSON.stringify(sample)); } catch (e) {}
+    renderCart();
+  }
+
+  function modelById(id) {
+    for (var i = 0; i < D.models.length; i++) if (D.models[i].id === id) return D.models[i];
+    return null;
+  }
+
+  function sampleQty(id) {
+    for (var i = 0; i < sample.items.length; i++) if (sample.items[i].id === id) return sample.items[i].qty;
+    return 0;
+  }
+
+  function addSample(id, qty) {
+    var cur = null;
+    for (var i = 0; i < sample.items.length; i++) if (sample.items[i].id === id) cur = sample.items[i];
+    if (cur) cur.qty = Math.min(999, cur.qty + (qty || 1));
+    else sample.items.push({ id: id, qty: Math.min(999, qty || 1) });
+    saveSample();
+  }
+
+  function setSampleQty(id, qty) {
+    for (var i = 0; i < sample.items.length; i++) {
+      if (sample.items[i].id !== id) continue;
+      if (qty <= 0) sample.items.splice(i, 1);
+      else sample.items[i].qty = Math.min(999, qty);
+      break;
+    }
+    saveSample();
+  }
+
+  function renderCart() {
+    var btn = document.getElementById("cartBtn");
+    var badge = document.getElementById("cartCount");
+    if (!btn) return;
+    var n = sample.items.length;
+    badge.textContent = String(n);
+    badge.hidden = n === 0;
+    btn.setAttribute("aria-label", t("cart") + (n ? " · " + n : ""));
+  }
 
   /* ---------------- 路由 ---------------- */
 
   function route() {
     var h = decodeURI(location.hash.replace(/^#/, ""));
-    if (!h || h === "/") return { name: "home" };
+    if (!h || h === "/") return { name: "home", qs: new URLSearchParams() };
     var i = h.indexOf("?");
     var path = i < 0 ? h : h.slice(0, i);
     var qs = new URLSearchParams(i < 0 ? "" : h.slice(i + 1));
     if (path.indexOf("/model/") === 0) return { name: "detail", id: path.slice(7), qs: qs };
     if (path === "/models") return { name: "models", qs: qs };
-    return { name: "home" };
+    if (path === "/sample") return { name: "sample", qs: qs };
+    return { name: "home", qs: qs };
   }
 
   function hashFor(f) {
@@ -246,9 +396,11 @@
   function render() {
     var r = route();
     applyChrome();
-    if (r.name === "home") renderHome();
+    if (r.name === "home") renderHome(r.qs);
     else if (r.name === "models") renderModels(r.qs);
+    else if (r.name === "sample") renderSample();
     else renderDetail(r.id);
+    renderCart();
     window.scrollTo(0, 0);
   }
 
@@ -280,16 +432,27 @@
 
   /* ---------------- 首页 ---------------- */
 
-  function renderHome() {
-    var seriesCards = D.series.map(function (s) {
-      return '<a class="series-card" href="#/models?s=' + encodeURIComponent(s.id) + '" style="--c:' + s.color + '">' +
-        '<span class="name">' + esc(L(s.name)) + "</span>" +
-        '<span class="desc">' + esc(L(s.desc)) + "</span>" +
-        '<span class="count"><b>' + s.count + "</b> " + t("models") + "</span></a>";
-    }).join("");
+  function renderHome(qs) {
+    qs = qs || new URLSearchParams();
 
-    var dimChips = ["wireless", "triac", "switch", "none"].map(function (tag) {
-      return '<a class="chip" href="#/models?t=' + tag + '">' + esc(t("dimTags")[tag]) + "</a>";
+    var sel = {};
+    (D.selector || []).forEach(function (s) { sel[s.id] = qs.get(s.id) || ""; });
+    state.pick = sel;
+
+    var heroChips = '<a class="chip" href="#/models">' + esc(t("all")) + "</a>" +
+      D.series.map(function (s) {
+        return '<a class="chip" href="#/models?s=' + encodeURIComponent(s.id) + '">' + esc(L(s.name)) + "</a>";
+      }).join("");
+
+    var pickRows = (D.selector || []).map(function (step) {
+      var chips = step.options.map(function (o) {
+        return '<button class="chip pick-chip" type="button" data-step="' + esc(step.id) +
+          '" data-opt="' + esc(o.id) + '" data-count-key="' + esc(step.id) + ":" + esc(o.id) + '">' +
+          "<span>" + esc(L(o.label)) + "</span>" +
+          '<b class="cnt">' + o.count + "</b></button>";
+      }).join("");
+      return '<div class="pick-row"><div class="pick-lab">' + esc(L(step.label)) + "</div>" +
+        '<div class="chips">' + chips + "</div></div>";
     }).join("");
 
     var pr = M.powerRange ? M.powerRange[0] + "–" + M.powerRange[1] + "W" : "—";
@@ -297,7 +460,10 @@
     view.innerHTML =
       '<section class="hero">' +
         '<span class="eyebrow">' + esc(t("eyebrow")) + "</span>" +
-        "<h1>" + esc(t("heroTitle")) + "</h1>" +
+        '<div class="hero-row">' +
+          "<h1>" + esc(t("heroTitle")) + "</h1>" +
+          '<div class="chips hero-chips">' + heroChips + "</div>" +
+        "</div>" +
         "<p>" + esc(L(M.subtitle)) + "</p>" +
       "</section>" +
       '<div class="stats">' +
@@ -305,12 +471,139 @@
         '<div class="stat"><b>' + D.series.length + "</b><span>" + t("statsSeries") + "</span></div>" +
         '<div class="stat"><b>' + esc(pr) + "</b><span>" + t("statsPower") + "</span></div>" +
       "</div>" +
-      '<a class="search" href="#/models?focus=1" role="search">' + ICON.search +
-        '<span style="flex:1;padding:13px 10px;color:var(--ink-3)">' + esc(t("search")) + "</span></a>" +
-      '<div class="sec-head"><h2>' + t("bySeries") + "</h2><a href=\"#/models\">" + t("viewAll") + " " + M.count + " " + t("models") + "</a></div>" +
-      '<div class="series-grid">' + seriesCards + "</div>" +
-      '<div class="sec-head"><h2>' + t("byDimming") + "</h2></div>" +
-      '<div class="chips">' + dimChips + "</div>";
+      '<div class="picker" id="picker">' +
+        '<div class="pick-head"><h2>' + esc(t("quickPick")) + "</h2>" +
+          '<button class="link-btn" id="pickClear" type="button">' + esc(t("pickClear")) + "</button></div>" +
+        pickRows +
+      "</div>" +
+      '<div id="pickResults"></div>' +
+      '<a class="btn block" href="#/models">' + t("browseAll").replace("{n}", M.count) + "</a>";
+
+    bindPick();
+    updatePick();
+  }
+
+  function bindPick() {
+    var picker = document.getElementById("picker");
+    picker.addEventListener("click", function (e) {
+      var chip = e.target.closest(".pick-chip");
+      if (!chip) return;
+      var step = chip.getAttribute("data-step");
+      var opt = chip.getAttribute("data-opt");
+      state.pick[step] = state.pick[step] === opt ? "" : opt;
+      syncPickHash();
+      updatePick();
+    });
+
+    document.getElementById("pickClear").addEventListener("click", function () {
+      Object.keys(state.pick).forEach(function (k) { state.pick[k] = ""; });
+      syncPickHash();
+      updatePick();
+    });
+
+    document.getElementById("pickResults").addEventListener("click", function (e) {
+      var clear = e.target.closest("[data-clear]");
+      if (clear) {
+        state.pick[clear.getAttribute("data-clear")] = "";
+        syncPickHash();
+        updatePick();
+        return;
+      }
+      var addBtn = e.target.closest(".add-btn");
+      if (!addBtn) return;
+      e.preventDefault();
+      addSample(addBtn.getAttribute("data-add"), 1);
+      addBtn.classList.add("in");
+      addBtn.textContent = "✓";
+      toast(t("addedToast"));
+    });
+  }
+
+  function pickSelection() {
+    var out = [];
+    (D.selector || []).forEach(function (s) {
+      var v = state.pick[s.id];
+      if (!v) return;
+      s.options.forEach(function (o) { if (o.id === v) out.push(o.ids); });
+    });
+    return out;
+  }
+
+  function intersect(sets) {
+    if (!sets.length) return null;
+    var base = sets[0];
+    var rest = sets.slice(1).map(function (a) { return new Set(a); });
+    return base.filter(function (id) { return rest.every(function (s) { return s.has(id); }); });
+  }
+
+  function countFor(stepId, optIds) {
+    var sets = [];
+    (D.selector || []).forEach(function (s) {
+      if (s.id === stepId) return;
+      var v = state.pick[s.id];
+      if (!v) return;
+      s.options.forEach(function (o) { if (o.id === v) sets.push(o.ids); });
+    });
+    sets.push(optIds);
+    var ids = intersect(sets);
+    return ids ? ids.length : 0;
+  }
+
+  function updatePick() {
+    var chips = document.querySelectorAll(".pick-chip");
+    for (var i = 0; i < chips.length; i++) {
+      var step = chips[i].getAttribute("data-step");
+      var opt = chips[i].getAttribute("data-opt");
+      var pressed = state.pick[step] === opt;
+      chips[i].setAttribute("aria-pressed", String(pressed));
+      var c = chips[i].querySelector(".cnt");
+      var ids = null;
+      (D.selector || []).forEach(function (s) {
+        if (s.id !== step) return;
+        s.options.forEach(function (o) { if (o.id === opt) ids = o.ids; });
+      });
+      if (c && ids) c.textContent = String(countFor(step, ids));
+      chips[i].classList.toggle("zero", !!c && Number(c.textContent) === 0);
+    }
+
+    var host = document.getElementById("pickResults");
+    if (!host) return;
+
+    var selected = pickSelection();
+    if (!selected.length) {
+      host.innerHTML = '<p class="pick-hint">' + esc(t("pickHint")) + "</p>";
+      return;
+    }
+
+    var ids = intersect(selected);
+    var set = new Set(ids);
+    var list = D.models.filter(function (m) { return set.has(m.id); });
+
+    var activeHTML = '<div class="pick-active"><span class="pa-label">' + esc(t("picked")) + "</span>" +
+      (D.selector || []).map(function (s) {
+        var v = state.pick[s.id];
+        if (!v) return "";
+        var label = "";
+        s.options.forEach(function (o) { if (o.id === v) label = L(o.label); });
+        return '<button class="pa-tag" type="button" data-clear="' + esc(s.id) + '">' + esc(label) + " ×</button>";
+      }).join("") + "</div>";
+
+    if (!list.length) {
+      host.innerHTML = activeHTML +
+        '<div class="empty"><h3>' + esc(t("pickEmpty")) + "</h3><p>" + esc(t("pickEmptyHint")) + "</p></div>";
+      return;
+    }
+
+    host.innerHTML = activeHTML + '<div class="sec-head"><h2>' + esc(t("pickCount").replace("{n}", list.length)) + "</h2></div>" +
+      '<div class="model-list">' + list.map(cardHTML).join("") + "</div>";
+  }
+
+  function syncPickHash() {
+    var p = [];
+    (D.selector || []).forEach(function (s) {
+      if (state.pick[s.id]) p.push(s.id + "=" + encodeURIComponent(state.pick[s.id]));
+    });
+    setHash("#/" + (p.length ? "?" + p.join("&") : ""));
   }
 
   /* ---------------- 列表 ---------------- */
@@ -469,6 +762,16 @@
     document.getElementById("applyFilters").addEventListener("click", closeSheet);
 
     document.getElementById("modelList").addEventListener("click", function (e) {
+      var addBtn = e.target.closest(".add-btn");
+      if (addBtn) {
+        e.preventDefault();
+        var id = addBtn.getAttribute("data-add");
+        addSample(id, 1);
+        addBtn.classList.add("in");
+        addBtn.textContent = "✓";
+        toast(t("addedToast"));
+        return;
+      }
       var b = e.target.closest("[data-action='clear']");
       if (!b) return;
       e.preventDefault();
@@ -527,20 +830,24 @@
   }
 
   function cardHTML(m) {
-    var s = seriesById(m.series);
     var tags = m.protocolTags.map(function (tag) {
       return '<span class="tag sys">' + esc(t("dimTags")[tag] || tag) + "</span>";
     }).join("");
     tags += '<span class="tag cert">' + esc(certShort(m)) + "</span>";
     tags += '<span class="tag">' + esc(L(m.protection)) + "</span>";
+    var inList = sampleQty(m.id) > 0;
 
-    return '<a class="mcard" href="#/model/' + encodeURIComponent(m.id) + '">' +
-      '<div class="row1"><span class="model">' + esc(m.id) + "</span>" +
-      '<span class="ch">' + esc(m.channels) + "</span></div>" +
-      '<div class="row2">' + esc(subLine(m)) + "</div>" +
-      '<div class="spec-line"><span><b>' + esc(m.power) + "</b></span><span>" + esc(L(m.output)) +
-      "</span><span>" + esc(m.input) + "</span></div>" +
-      '<div class="row3">' + tags + "</div></a>";
+    return '<div class="mcard">' +
+      '<a class="mcard-link" href="#/model/' + encodeURIComponent(m.id) + '">' +
+        '<div class="row1"><span class="model">' + esc(m.id) + "</span></div>" +
+        '<div class="row2">' + esc(subLine(m)) + "</div>" +
+        '<div class="spec-line"><span><b>' + esc(m.power) + "</b></span><span>" + esc(L(m.output)) +
+        "</span><span>" + esc(m.input) + "</span><span>" + esc(m.channels) + "</span></div>" +
+        '<div class="row3">' + tags + "</div>" +
+      "</a>" +
+      '<button class="add-btn' + (inList ? " in" : "") + '" type="button" data-add="' + esc(m.id) +
+        '" aria-label="' + esc(t("addSample")) + '">' + (inList ? "✓" : "+") + "</button>" +
+    "</div>";
   }
 
   function updateList() {
@@ -607,11 +914,7 @@
         }).join("") + "</div>"
       : "";
 
-    var subject = encodeURIComponent(t("mailSubject") + m.id + " — " + L(s.name));
-    var body = encodeURIComponent(
-      t("quoteBody").replace("{id}", m.id).replace("{series}", L(s.name))
-        .replace("{power}", m.power).replace("{output}", L(m.output))
-    );
+    var inList = sampleQty(m.id) > 0;
 
     view.innerHTML =
       '<div class="page-head"><a class="back" href="' + state.lastListHash + '">' + ICON.back + t("back") + "</a></div>" +
@@ -625,13 +928,29 @@
       '<div class="actions">' +
         '<button class="btn" id="copyBtn" type="button">' + ICON.copy + t("copy") + "</button>" +
         '<button class="btn" id="shareBtn" type="button">' + ICON.share + t("share") + "</button>" +
-        '<a class="btn primary" style="grid-column:1/-1" href="mailto:' + EMAIL + "?subject=" + subject + "&body=" + body + '">' + ICON.mail + t("quote") + "</a>" +
+        '<button class="btn ' + (inList ? "added" : "primary") + '" id="addBtn" type="button" style="grid-column:1/-1"' +
+          (inList ? ' data-in="1"' : "") + ">" +
+          (inList ? ICON.check + t("added") + " · " + t("viewList") : ICON.plus + t("addSample")) +
+        "</button>" +
       "</div>" + relatedHTML;
 
     bindDetail(m);
   }
 
   function bindDetail(m) {
+    var addBtn = document.getElementById("addBtn");
+    addBtn.addEventListener("click", function () {
+      if (addBtn.getAttribute("data-in")) {
+        location.hash = "#/sample";
+        return;
+      }
+      addSample(m.id, 1);
+      addBtn.setAttribute("data-in", "1");
+      addBtn.className = "btn added";
+      addBtn.innerHTML = ICON.check + t("added") + " · " + t("viewList");
+      toast(t("addedToast"));
+    });
+
     document.getElementById("copyBtn").addEventListener("click", function () {
       var s = seriesById(m.series);
       var text = [
@@ -690,6 +1009,211 @@
     el.classList.add("show");
     clearTimeout(toastTimer);
     toastTimer = setTimeout(function () { el.classList.remove("show"); }, 1800);
+  }
+
+  /* ---------------- 样品需求 ---------------- */
+
+  function buildRequest() {
+    var zh = state.lang === "zh";
+    var c = sample.customer;
+    var out = [];
+    out.push(zh ? "样品需求单" : "Sample Request");
+    out.push("");
+
+    var meta = [
+      [zh ? "公司" : "Company", c.company],
+      [zh ? "联系人" : "Contact", c.contact],
+      [zh ? "邮箱" : "Email", c.email],
+      [zh ? "国家/地区" : "Country", c.country],
+      [zh ? "电话/微信" : "Phone / WeChat", c.phone],
+      [zh ? "期望交期" : "Required by", c.needBy]
+    ];
+    meta.forEach(function (m) {
+      if (m[1]) out.push(m[0] + ": " + m[1]);
+    });
+
+    out.push("");
+    out.push(zh ? "样品清单：" : "Items:");
+    sample.items.forEach(function (it, i) {
+      var m = modelById(it.id);
+      if (!m) return;
+      out.push((i + 1) + ". " + m.id + " | " + L(seriesById(m.series).name) + " | " +
+        m.power + " | " + L(m.output) + " | x" + it.qty);
+    });
+
+    if (c.note) {
+      out.push("");
+      out.push((zh ? "备注：" : "Notes: ") + c.note);
+    }
+
+    out.push("");
+    out.push(zh ? "（由安规产品选型 App 生成）" : "(Generated by Anway Product Finder)");
+    return out.join("\n");
+  }
+
+  function mailtoUrl() {
+    var zh = state.lang === "zh";
+    var subject = (zh ? "样品需求单" : "Sample Request") +
+      (sample.customer.company ? " · " + sample.customer.company : "");
+    return "mailto:" + EMAIL + "?subject=" + encodeURIComponent(subject) +
+      "&body=" + encodeURIComponent(buildRequest());
+  }
+
+  function renderSample() {
+    var zh = state.lang === "zh";
+    var n = sample.items.length;
+
+    if (!n) {
+      view.innerHTML =
+        '<div class="page-head"><a class="back" href="#/models">' + ICON.back + t("back") + "</a></div>" +
+        "<h1>" + esc(t("sampleTitle")) + "</h1>" +
+        '<div class="empty"><h3>' + esc(t("sampleEmpty")) + "</h3><p>" + esc(t("sampleEmptyHint")) + "</p>" +
+        '<a class="btn" href="#/models">' + esc(t("goPick")) + "</a></div>";
+      return;
+    }
+
+    var rows = sample.items.map(function (it) {
+      var m = modelById(it.id);
+      if (!m) return "";
+      return '<div class="sitem" data-id="' + esc(m.id) + '">' +
+        '<div class="info">' +
+          '<div class="model">' + esc(m.id) + "</div>" +
+          '<div class="sub">' + esc(L(seriesById(m.series).name)) + " · " + esc(m.power) + "</div>" +
+        "</div>" +
+        '<div class="qty">' +
+          '<button type="button" data-act="dec" aria-label="' + esc(t("qty")) + ' -">−</button>' +
+          "<span>" + it.qty + "</span>" +
+          '<button type="button" data-act="inc" aria-label="' + esc(t("qty")) + ' +">+</button>' +
+        "</div>" +
+        '<button class="rm" type="button" data-act="rm" aria-label="' + esc(t("remove")) + '">×</button>' +
+      "</div>";
+    }).join("");
+
+    var c = sample.customer;
+    function field(name, label, type, ph, extra) {
+      return '<div class="field"><label for="cf-' + name + '">' + esc(label) + "</label>" +
+        '<input id="cf-' + name + '" data-field="' + name + '" type="' + (type || "text") +
+        '" value="' + esc(c[name] || "") + '" placeholder="' + esc(ph || "") + '"' + (extra || "") + "></div>";
+    }
+
+    view.innerHTML =
+      '<div class="page-head"><a class="back" href="#/models">' + ICON.back + t("back") + "</a></div>" +
+      '<div class="sample-head"><div><h1>' + esc(t("sampleTitle")) + "</h1>" +
+        '<div class="count">' + esc(t("sampleCount").replace("{n}", n)) + "</div></div>" +
+        '<button class="link-btn" id="clearList" type="button">' + esc(t("clearList")) + "</button></div>" +
+      '<div class="panel" id="sampleList">' + rows + "</div>" +
+      '<div class="sec-head"><h2>' + esc(t("customerTitle")) + " · " + esc(t("optional")) + "</h2></div>" +
+      '<p class="hint">' + esc(t("customerHint")) + "</p>" +
+      '<div class="panel"><div class="form-grid" id="custForm">' +
+        '<div class="two-col">' +
+          field("company", t("fCompany")) +
+          field("contact", t("fContact")) +
+        "</div>" +
+        '<div class="two-col">' +
+          field("email", t("fEmail"), "email") +
+          field("country", t("fCountry")) +
+        "</div>" +
+        '<div class="two-col">' +
+          field("phone", t("fPhone")) +
+          field("needBy", t("fNeedBy"), "text", zh ? "如 2026-12-01" : "e.g. 2026-12-01") +
+        "</div>" +
+        '<div class="field"><label for="cf-note">' + esc(t("fNote")) + "</label>" +
+          '<textarea id="cf-note" data-field="note" placeholder="' + esc(t("fNotePlaceholder")) + '">' +
+          esc(c.note || "") + "</textarea></div>" +
+      "</div></div>" +
+      '<button class="btn primary block" id="sendBtn" type="button">' + ICON.mail + esc(t("send")) + "</button>" +
+      '<div class="sheet" id="sendSheet" hidden>' +
+        '<div class="sheet-backdrop" data-close="1"></div>' +
+        '<div class="sheet-panel" role="dialog" aria-modal="true" aria-label="' + esc(t("sendTitle")) + '">' +
+          '<div class="sheet-head"><h2>' + esc(t("sendTitle")) + '</h2>' +
+            '<button class="close" id="closeSend" type="button" aria-label="close">×</button></div>' +
+          '<div class="sheet-body">' +
+            '<button class="send-opt" id="optEmail" type="button">' +
+              '<span class="ic">' + ICON.mail + "</span>" +
+              '<span class="tx"><b>' + esc(t("byEmail")) + "</b><small>" + esc(t("byEmailHint")) + "</small></span>" +
+            "</button>" +
+            '<button class="send-opt" id="optWecom" type="button">' +
+              '<span class="ic">' + ICON.chat + "</span>" +
+              '<span class="tx"><b>' + esc(t("byWecom")) + "</b><small>" + esc(t("byWecomHint")) + "</small></span>" +
+            "</button>" +
+            '<div class="qr-block" id="qrBlock" hidden>' +
+              '<img src="icons/wecom-qr.png" alt="WeCom QR code" width="200" height="200">' +
+              "<p>" + esc(t("wecomScan")) + "</p>" +
+            "</div>" +
+            '<button class="send-opt" id="optCopy" type="button">' +
+              '<span class="ic">' + ICON.copy + "</span>" +
+              '<span class="tx"><b>' + esc(t("byCopy")) + "</b><small>" + esc(t("byCopyHint")) + "</small></span>" +
+            "</button>" +
+          "</div>" +
+        "</div>" +
+      "</div>";
+
+    bindSample();
+  }
+
+  function bindSample() {
+    var sheet = document.getElementById("sendSheet");
+
+    document.getElementById("sampleList").addEventListener("click", function (e) {
+      var btn = e.target.closest("[data-act]");
+      if (!btn) return;
+      var row = e.target.closest(".sitem");
+      var id = row.getAttribute("data-id");
+      var act = btn.getAttribute("data-act");
+      var q = sampleQty(id);
+      if (act === "inc") setSampleQty(id, q + 1);
+      else if (act === "dec") setSampleQty(id, q - 1);
+      else if (act === "rm") setSampleQty(id, 0);
+      renderSample();
+    });
+
+    document.getElementById("clearList").addEventListener("click", function () {
+      if (!window.confirm(t("clearConfirm"))) return;
+      sample.items = [];
+      saveSample();
+      renderSample();
+    });
+
+    document.getElementById("custForm").addEventListener("input", function (e) {
+      var el = e.target;
+      var key = el.getAttribute("data-field");
+      if (!key) return;
+      sample.customer[key] = el.value;
+      saveSample();
+    });
+
+    function openSheet() {
+      sheet.hidden = false;
+      document.body.style.overflow = "hidden";
+      sheet.querySelector(".close").focus();
+    }
+    function closeSheet() {
+      sheet.hidden = true;
+      document.body.style.overflow = "";
+      var b = document.getElementById("sendBtn");
+      if (b) b.focus();
+    }
+
+    document.getElementById("sendBtn").addEventListener("click", openSheet);
+    document.getElementById("closeSend").addEventListener("click", closeSheet);
+    sheet.querySelector(".sheet-backdrop").addEventListener("click", closeSheet);
+    sheet.addEventListener("keydown", function (e) {
+      if (e.key === "Escape") { e.preventDefault(); closeSheet(); }
+    });
+
+    document.getElementById("optEmail").addEventListener("click", function () {
+      location.href = mailtoUrl();
+    });
+
+    document.getElementById("optWecom").addEventListener("click", function () {
+      var qr = document.getElementById("qrBlock");
+      qr.hidden = !qr.hidden;
+      if (!qr.hidden) qr.scrollIntoView({ block: "nearest" });
+    });
+
+    document.getElementById("optCopy").addEventListener("click", function () {
+      copyText(buildRequest(), t("copiedReq"));
+    });
   }
 
   /* ---------------- 启动 ---------------- */
